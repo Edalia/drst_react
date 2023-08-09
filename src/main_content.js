@@ -1,12 +1,13 @@
-export default function main_content() {
-	let imgPath = require("./img/drst1.jpg");
+import ImgHome from "./img_home.js";
+import PartnersPanel from "./partners_panel.js";
+import NavBar from "./navbar.js";
 
+export default function main_content() {
 	return (
-		<img
-			src={imgPath}
-			class="img-fluid w-100"
-			id="carouselHome"
-			alt="drst"
-		></img>
+		<div>
+			<NavBar />
+			<ImgHome />
+			<PartnersPanel />
+		</div>
 	);
 }

@@ -28,17 +28,6 @@
 	color: #61dafb;
 }
 
-#navBarHome {
-	z-index: 1;
-	position: fixed;
-	top: 0;
-}
-
-#carouselHome {
-	top: 0;
-  z-index: 0;
-}
-
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);

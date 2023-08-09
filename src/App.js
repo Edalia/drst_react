@@ -6,7 +6,7 @@ import MainContent from "./main_content.js";
 
 function App() {
 	return (
-		<div>
+		<div >
 			<Navbar />
 			<MainContent />
 			<Footer />

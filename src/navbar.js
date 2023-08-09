@@ -1,38 +1,31 @@
 export default function navbar() {
-	{
-		const [scrolled] = useState("navbar navbar-expand-lg navbar-light sticky-top bg-light");
-
-
-		window.addEventListener("scroll", () => {
-			const isScrolled = require(window.scrollY > 0);
-
-			if (isScrolled)
-				 scrolled = "navbar navbar-expand-lg navbar-light sticky-top bg-light";
-			else
-				scrollled = "navbar-expand-lg navbar-light sticky-top";
-		});
-	}
-
 	return (
-		<nav class={scrolled}>
-			<div class="collapse navbar-collapse" id="navBarHome">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="">
-							Home <span class="sr-only">(current)</span>
+		<nav class="navbar navbar-expand-lg fixed-top bg-light">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link active" aria-current="page" href="#">
+							Home
 						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.js">
+						<a class="nav-link" href="#">
 							About
 						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.js">
+						<a class="nav-link" href="#">
 							Contact
 						</a>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 		</nav>
 	);
