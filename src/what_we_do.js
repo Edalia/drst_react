@@ -1,4 +1,5 @@
 export default function what_we_do() {
+	//projects[]: array of objects which will be dislpayed on the 'what we do panel'
 	const projects = [
 		{
 			heading:
@@ -21,18 +22,35 @@ export default function what_we_do() {
 			description:
 				"The education program aims to transform lives through learning and development.",
 		},
+		{
+			heading: "Improving Education",
+			description:
+				"The education program aims to transform lives through learning and development.",
+		},
+		{
+			heading: "Improving Education",
+			description:
+				"The education program aims to transform lives through learning and development.",
+		},
 	];
 
 	return (
-		<div class="container px-4 text-center mt-5">
-			<h2 class="">What we do</h2>
-			<div class="grid text-center mt-5">
-				{projects.map((project, i) => (
-					<div class="g-col-6 projects" key={i}>
-						<h5>{project.heading}</h5>
-						<p>{project.description}</p>
+		<div class="container text-center mt-5">
+			<h2 class="">WHAT WE DO</h2>
+			<div class="row">
+				<div class="col mt-5">
+					<img src={require("./img/drst1.jpg")} id="WhatWeDoIMG" alt=""></img>
+				</div>
+				<div class="col">
+					<div class="grid text-center mt-5">
+						{projects.map((project, i) => (
+							<div class="g-col-6 projects" key={i}>
+								<h5>{project.heading}</h5>
+								<p>{project.description}</p>
+							</div>
+						))}
 					</div>
-				))}
+				</div>
 			</div>
 		</div>
 	);

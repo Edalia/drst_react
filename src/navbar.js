@@ -1,8 +1,10 @@
+import Sitelogo from "./logo";
+
 export default function navbar() {
-		
-		return (
+	return (
 		<nav class="navbar navbar-expand-lg fixed-top bg-light">
 			<div class="container-fluid">
+				<Sitelogo />
 				<button
 					class="navbar-toggler"
 					type="button"
