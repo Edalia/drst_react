@@ -1,5 +1,6 @@
 export default function navbar() {
-	return (
+		
+		return (
 		<nav class="navbar navbar-expand-lg fixed-top bg-light">
 			<div class="container-fluid">
 				<button

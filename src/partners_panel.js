@@ -1,7 +1,8 @@
 export default function partners_panel() {
 	return (
-		<div class="container px-4 text-center mt-5">
-			<div class="row gx-5">
+		<div class="text-center mt-5" id='PartnersDiv'>
+			<h2 class>Our Partners</h2>
+			<div class="row gx-5 mt-5">
 				<div class="col">
 					<div class="card">
 						<div class="card-body">

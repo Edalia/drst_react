@@ -28,6 +28,49 @@
 	color: #61dafb;
 }
 
+/*Home page image div*/
+#CarouselDiv {
+	overflow: hidden;
+	/* background: rgb(10, 10, 10); for browsers with no gradient */
+	/* background: linear-gradient(#fbc531, #44bd32); */
+	height: 75vh;
+}
+
+/**
+*img id: Changes opacity of Home page img
+*/
+#CarouselImg {
+	opacity: 0.3;
+	width: 100%;
+	height: 100%;
+}
+
+/*Defines text that goes over home page image*/
+#CarouselCard {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+/*Styles the 'What we do' Div*/
+.projects {
+	padding: 30px;
+	border: 1px solid black;
+}
+
+/*Styles the 'Our partners' Div*/
+#PartnersDiv {
+	background-color: #282c34;
+	width: 100%;
+}
+
+/*Styles the 'Specific partners card' Div*/
+#PartnersDiv .card {
+	bottom: 30px;
+}
+
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
