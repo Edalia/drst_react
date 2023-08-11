@@ -38,9 +38,9 @@ export default function img_home() {
 							<p class="h5 mt-5">
 								Helping those in need find their way to a brighter future
 							</p>
-							<a href="" class="btn btn-warning mt-5" id="ReadMoreBtn">
+							{/* <a href="" class="btn btn-warning mt-5" id="ReadMoreBtn">
 								Read More
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>

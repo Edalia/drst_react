@@ -18,13 +18,17 @@ export default function navbar() {
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-link active" aria-current="page" href="#">
+						<a
+							class="nav-link active"
+							aria-current="page"
+							href="https://drst.or.tz/"
+						>
 							Home
 						</a>
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="https://drst.or.tz/our-partners/">
 							About
 						</a>
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="https://drst.or.tz/contact-us/">
 							Contact
 						</a>
 					</div>

@@ -1,9 +1,9 @@
 export default function partners_panel() {
-	let partners = [
-		{
-			img: "",
-		},
-	];
+	// let partners = [
+	// 	{
+	// 		img: "",
+	// 	},
+	// ];
 	return (
 		<div class="container-fluid text-center mt-5" id="PartnersDiv">
 			<h2 class="">OUR PARTNERS</h2>
@@ -17,12 +17,12 @@ export default function partners_panel() {
 								Some quick example text to build on the card title and make up
 								the bulk of the card's content.
 							</p>
-							<a href="#" class="card-link">
+							{/* <a href="#" class="card-link">
 								Card links
-							</a>
-							<a href="#" class="card-link">
+							</a> */}
+							{/* <a href="#" class="card-link">
 								Another link
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</div>
