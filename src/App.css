@@ -31,9 +31,9 @@
 /*Home page image div*/
 #CarouselDIV {
 	overflow: hidden;
-	background: rgb(30, 30, 5); /* for browsers with no gradient*/
+	background: #715508; /* for browsers with no gradient*/
 	background: linear-gradient(to right, #715508, #156209);
-	height: 90vh;
+	height: 95vh;
 	position: relative;
 }
 
@@ -43,7 +43,7 @@
 #CarouselIMG {
 	opacity: 0.2;
 	width: 100%;
-	height: 90vh;
+	height: 95vh;
 }
 
 /*Defines text that goes over home page image*/
@@ -60,6 +60,12 @@
 	width: 500px;
 	height: 500px;
 }
+
+/*animate "what we do" div*/
+#WhatWeDoDIV {
+	animation: 1s ease-out 0s 1 slideInLeft;
+}
+
 /*Styles the 'What we do' Div*/
 .projects {
 	padding: 30px;
@@ -116,6 +122,16 @@ p {
 i {
 	font-size: x-large;
 }
+
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);

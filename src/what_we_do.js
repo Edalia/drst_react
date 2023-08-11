@@ -25,8 +25,15 @@ export default function What_we_do() {
 	];
 
 	return (
-		<div class="container text-center mt-5">
+		<div class="container text-center mt-5" id="WhatWeDoDIV">
 			<h2 class="">WHAT WE DO</h2>
+			<div class="container mt-5">
+				<p>
+					Disability Relief Services (DRS) Tanzania is proud to work alongside
+					our esteemed partners who share our vision of creating an inclusive
+					and barrier-free society for people with disabilities in Tanzania.
+				</p>
+			</div>
 			<div class="row">
 				<div class="col mt-5">
 					<img src={require("./img/drst1.jpg")} id="WhatWeDoIMG" alt=""></img>
