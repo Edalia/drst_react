@@ -1,30 +1,38 @@
-export default function partners_panel() {
-	// let partners = [
-	// 	{
-	// 		img: "",
-	// 	},
-	// ];
+export default function Partners_panel() {
+	//obj array to add partner details
+	let partners = [
+		{
+			img: require("./img/drc-logo.png"),
+			link: "https://drc.ngo/",
+		},
+		{
+			img: require("./img/helpage-international-logo.png"),
+			link: "https://www.helpage.org/",
+		},
+		{
+			img: require("./img/oxfam-logo.png"),
+			link: "https://www.oxfam.org.uk/",
+		},
+		{
+			img: require("./img/unhcr-logo.png"),
+			link: "https://www.unrefugees.org/",
+		},
+	];
+
 	return (
 		<div class="container-fluid text-center mt-5" id="PartnersDiv">
-			<h2 class="">OUR PARTNERS</h2>
-			<div class="row">
-				<div class="col mt-5">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							{/* <a href="#" class="card-link">
-								Card links
-							</a> */}
-							{/* <a href="#" class="card-link">
-								Another link
-							</a> */}
+			<h2 class="mt-4">OUR PARTNERS</h2>
+			<div class="container d-flex justify-content-center">
+				<div class="row">
+					{partners.map((partner, i) => (
+						<div class="card mt-5" key={i}>
+							<div class="card-body">
+								<a href={partner.link}>
+									<img src={partner.img}></img>
+								</a>
+							</div>
 						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</div>

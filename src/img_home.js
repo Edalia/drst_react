@@ -1,4 +1,4 @@
-export default function img_home() {
+export default function Img_home() {
 	/**
 	 * slides[]: array of objects which will be dislpayed on the home page carousel
 	 *slide_interval: time taken to switch contents automatically

@@ -1,4 +1,4 @@
-export default function what_we_do() {
+export default function What_we_do() {
 	//projects[]: array of objects which will be dislpayed on the 'what we do panel'
 	const projects = [
 		{
@@ -16,16 +16,6 @@ export default function what_we_do() {
 			heading: "Economic Empowerment Related Activities",
 			description:
 				"The economic empowerment program aims to provide people with the opportunities and resources they need to achieve sustainable growth and success.",
-		},
-		{
-			heading: "Improving Education",
-			description:
-				"The education program aims to transform lives through learning and development.",
-		},
-		{
-			heading: "Improving Education",
-			description:
-				"The education program aims to transform lives through learning and development.",
 		},
 		{
 			heading: "Improving Education",

@@ -1,6 +1,7 @@
 # drst_react
+
 A modified version of the website "https://drst.or.tz/" developed using React JS.
-Hosted on
+Hosted on 'https://drst.netlify.app/'
 
 ## Getting Started with Create React App
 
