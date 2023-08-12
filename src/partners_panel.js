@@ -20,24 +20,24 @@ export default function Partners_panel() {
 			img: require("./img/unhcr-logo.png"),
 			link: "https://www.unrefugees.org/",
 			alt: "https://www.unrefugees.org/",
-		},
+		}
 	];
 
 	return (
-		<div class="container-fluid text-center mt-5" id="PartnersDiv">
-			<h2 class="mt-4">OUR PARTNERS</h2>
-			<div class="container mt-5">
+		<div className="container-fluid text-center mt-5" id="PartnersDiv">
+			<h2 className="mt-4">OUR PARTNERS</h2>
+			<div className="container mt-3">
 				<p>
 					Disability Relief Services (DRS) Tanzania is proud to work alongside
 					our esteemed partners who share our vision of creating an inclusive
 					and barrier-free society for people with disabilities in Tanzania.
 				</p>
 			</div>
-			<div class="container d-flex justify-content-center">
-				<div class="row">
+			<div className="container d-flex justify-content-center">
+				<div className="row">
 					{partners.map((partner, i) => (
-						<div class="card mt-5" key={i}>
-							<div class="card-body">
+						<div className="card mt-5" key={i}>
+							<div className="card-body">
 								<a href={partner.link}>
 									<img src={partner.img} alt={partner.alt}></img>
 								</a>

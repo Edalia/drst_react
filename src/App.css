@@ -28,11 +28,16 @@
 	color: #61dafb;
 }
 
+/*styles navbar links*/
+#NavBarLink:hover {
+	text-decoration: underline 4px;
+}
+
 /*Home page image div*/
 #CarouselDIV {
 	overflow: hidden;
-	background: #715508; /* for browsers with no gradient*/
-	background: linear-gradient(to right, #715508, #156209);
+	background: #156209; /* for browsers with no gradient*/
+	background: radial-gradient(#83750d, #156209);
 	height: 95vh;
 	position: relative;
 }
@@ -68,21 +73,36 @@
 
 /*Styles the 'What we do' Div*/
 .projects {
-	padding: 30px;
-	border: 2px solid #156209;
+	padding: 20px;
+	border: 1px solid #156209;
 	overflow: auto;
 }
 
+/*Styles 'read more' button on home page carousel*/
+#read_more_btn {
+	border: 3px solid white;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#read_more_btn:hover {
+	background: #d5bf19;
+	border: none;
+	color: aliceblue;
+}
+
 .projects:hover {
-	background: linear-gradient(to right, #715508, #156209);
-	border: 2px solid white;
+	background: #156209;
+	border: 1px solid white;
 	color: white;
 	cursor: pointer;
 }
 
 /*Styles the 'Our partners' Div*/
 #PartnersDiv {
-	background: linear-gradient(to right, #715508, #156209);
+	background: linear-gradient(#156209, #d5bf19);
 	width: 100%;
 	color: white;
 	overflow: auto;
@@ -103,6 +123,11 @@
 	height: 100px;
 }
 
+#PartnersDiv .card img:hover {
+	opacity: 0.4;
+}
+
+/*Styles 'scroll to top'button*/
 #ScrollUpBtn {
 	position: fixed;
 	bottom: 40%;
@@ -116,11 +141,19 @@
 	border-radius: 30px;
 }
 
+#MapDiv {
+	width: 100vh;
+	height: 60vh;
+}
 p {
-	font-size: large;
+	font-size: medium;
 }
 i {
 	font-size: x-large;
+}
+
+#FooterDIV {
+	box-shadow: 1px -2px 5px grey;
 }
 
 @keyframes slideInLeft {

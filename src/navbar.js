@@ -2,11 +2,11 @@ import Sitelogo from "./logo";
 
 export default function Navbar() {
 	return (
-		<nav class="navbar navbar-expand-lg fixed-top bg-light">
-			<div class="container-fluid">
+		<nav className="navbar navbar-expand-lg fixed-top bg-light" id="NavBarDIV">
+			<div className="container-fluid">
 				<Sitelogo />
 				<button
-					class="navbar-toggler"
+					className="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarNavAltMarkup"
@@ -14,22 +14,31 @@ export default function Navbar() {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span className="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
+				<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div className="navbar-nav">
 						<a
-							class="nav-link active"
+							className="nav-link active"
 							aria-current="page"
+							id="NavBarLink"
 							href="https://drst.or.tz/"
 						>
-							Home
+							<p>Home</p>
 						</a>
-						<a class="nav-link" href="https://drst.or.tz/our-partners/">
-							About
+						<a
+							className="nav-link"
+							id="NavBarLink"
+							href="https://drst.or.tz/about-us/"
+						>
+							<p>About Us</p>
 						</a>
-						<a class="nav-link" href="https://drst.or.tz/contact-us/">
-							Contact
+						<a
+							className="nav-link"
+							id="NavBarLink"
+							href="https://drst.or.tz/contact-us/"
+						>
+							<p>Contact</p>
 						</a>
 					</div>
 				</div>

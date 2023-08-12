@@ -19,7 +19,6 @@ export default function Scrollup() {
 		} else {
 			//hide
 			setIsDisplayed(false);
-			console.log("hidden");
 		}
 	}
 
@@ -37,7 +36,7 @@ export default function Scrollup() {
 				onClick={sent_to_top}
 				id="ScrollUpBtn"
 				title="Go to top"
-				class="bi bi-arrow-up-circle-fill"
+				className="bi bi-arrow-up-circle-fill"
 				style={{ display: isDisplayed ? "block" : "none" }}
 			></span>
 		</div>
