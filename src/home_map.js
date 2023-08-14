@@ -20,7 +20,7 @@ export default function HomeMap() {
 					<h1>Loading...</h1>
 				) : (
 					<GoogleMap id="MapDiv" center={position} zoom={16}>
-						{/* <Marker position={position} /> */}
+						<Marker position={position} />
 					</GoogleMap>
 				)}
 			</div>
