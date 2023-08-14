@@ -1,17 +1,19 @@
-import ImgHome from "./img_home.js";
+import CarouselHome from "./carousel_home.js";
 import PartnersPanel from "./partners_panel.js";
 import NavBar from "./navbar.js";
 import WhatWeDo from "./what_we_do.js";
-import Scrollup from "./scrollup.js";
+import ScrollUp from "./scroll_up.js";
 import HomeMap from "./home_map.js";
+import WhoAreWe from "./who_are_we.js";
 
-export default function Main_content() {
+export default function MainContent() {
 	return (
 		<div>
 			<NavBar />
-			<ImgHome />
+			<CarouselHome />
+			<WhoAreWe />
 			<WhatWeDo />
-			<Scrollup />
+			<ScrollUp />
 			<PartnersPanel />
 			<HomeMap />
 		</div>

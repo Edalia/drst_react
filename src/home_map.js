@@ -6,7 +6,7 @@ export default function HomeMap() {
 
 	//check if maps is loaded
 	const { isLoaded } = useLoadScript({
-		googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+		googleMapsApiKey: "AIzaSyCkwvE_pQBydQayjCjheCeUg9kbUBS32PU",
 	});
 
 	//center maps around Kasulu location
@@ -20,7 +20,7 @@ export default function HomeMap() {
 					<h1>Loading...</h1>
 				) : (
 					<GoogleMap id="MapDiv" center={position} zoom={16}>
-						<Marker position={position} />
+						{/* <Marker position={position} /> */}
 					</GoogleMap>
 				)}
 			</div>

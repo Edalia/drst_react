@@ -1,4 +1,4 @@
-export default function What_we_do() {
+export default function WhatWeDo() {
 	//projects[]: array of objects which will be dislpayed on the 'what we do panel'
 	const projects = [
 		{
@@ -43,7 +43,7 @@ export default function What_we_do() {
 	return (
 		<div className="container mt-5" id="WhatWeDoDIV">
 			<h2 className="text-center">WHAT WE DO</h2>
-			<div className="container text-center mt-3">
+			<div className="container mt-3">
 				<p>
 					Disability Relief Services (DRS) Tanzania is proud to work alongside
 					our esteemed partners who share our vision of creating an inclusive
@@ -55,9 +55,16 @@ export default function What_we_do() {
 					<img src={require("./img/drst1.jpg")} id="WhatWeDoIMG" alt=""></img>
 				</div> */}
 				<div className="col">
-					<div className="grid">
+					<div className={window.screen.width > 1000 ? "grid" : ""}>
 						{projects.map((project, i) => (
-							<div className="g-col-4 projects" key={i}>
+							<div
+								className={
+									window.screen.width > 1000
+										? "g-col-4 projects"
+										: "projects mt-3"
+								}
+								key={i}
+							>
 								<i className={project.className}>
 									<h5>{project.heading}</h5>
 								</i>

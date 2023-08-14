@@ -1,4 +1,4 @@
-export default function Read_more_btn(props) {
+export default function ReadMoreBtn(props) {
 	return (
 		<div>
 			<a href={props.link} id="read_more_btn">

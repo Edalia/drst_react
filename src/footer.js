@@ -1,11 +1,11 @@
-import Sitelogo from "./logo";
+import SiteLogo from "./site_logo.js";
 
 export default function Footer() {
 	return (
 		<div className=" container-fluid mt-5" id="FooterDIV">
 			<div className=" container">
 				<br />
-				<Sitelogo />
+				<SiteLogo />
 				<p className="mt-2">
 					A nonprofit making organization dealing with improvement of
 					socio-economic condition in vulnerable, marginalized and deprived

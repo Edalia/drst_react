@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Scrollup() {
+export default function ScrollUp() {
 	let [isDisplayed, setIsDisplayed] = useState(false);
 
 	//When the user scrolls down 20px from the top of the document, show the button
@@ -11,8 +11,8 @@ export default function Scrollup() {
 	//if document is scrolled 100px display the button, else hide button
 	function scrollFunction() {
 		if (
-			document.body.scrollTop > 100 ||
-			document.documentElement.scrollTop > 100
+			document.body.scrollTop > 300 ||
+			document.documentElement.scrollTop > 300
 		) {
 			//scrolled
 			setIsDisplayed(true);

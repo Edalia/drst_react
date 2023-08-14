@@ -28,38 +28,70 @@
 	color: #61dafb;
 }
 
+#NavBarLink {
+	margin-left: 10px;
+	color: black;
+}
+
+#MediaContactDIV i {
+	padding-left: 20px;
+	color: black;
+}
+
+#MediaContactDIV i:hover {
+	color: grey;
+}
+
+/*Styles social media contact logos*/
+#MediaContactDIV {
+	padding-left: 40px;
+}
 /*styles navbar links*/
 #NavBarLink:hover {
 	text-decoration: underline 4px;
+	color: #156209;
 }
 
-/*Home page image div*/
+/*Home page carousel div*/
 #CarouselDIV {
 	overflow: hidden;
-	background: #156209; /* for browsers with no gradient*/
-	background: radial-gradient(#83750d, #156209);
-	height: 95vh;
+	background: black;
+	height: fit-content;
 	position: relative;
 }
 
-/**
-*img id: Changes opacity of Home page img
-*/
+/*Changes opacity of Home page carousel IMGs*/
 #CarouselIMG {
-	opacity: 0.2;
+	opacity: 0.7;
 	width: 100%;
 	height: 95vh;
 }
 
 /*Defines text that goes over home page image*/
-#CarouselCard {
+#CarouselTextCard {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	width: 100%;
 	transform: translate(-50%, -50%);
 	color: white;
+	font-weight: bold;
+	padding: 40px;
+	background: #00000081;
+	border-radius: 5px;
 }
 
+/*'Who are we' and 'Our partners' div styling*/
+#WhoAreWeDIV,
+#PatnersDIV {
+	background: linear-gradient(#156209, #a5930f);
+	color: white;
+	overflow: auto;
+}
+
+#WhoAreWeDIV {
+	padding-bottom: 70px;
+}
 /*Styles 'what we do' img*/
 #WhatWeDoIMG {
 	width: 500px;
@@ -88,7 +120,7 @@
 }
 
 #read_more_btn:hover {
-	background: #d5bf19;
+	background: #a5930f;
 	border: none;
 	color: aliceblue;
 }
@@ -100,16 +132,8 @@
 	cursor: pointer;
 }
 
-/*Styles the 'Our partners' Div*/
-#PartnersDiv {
-	background: linear-gradient(#156209, #d5bf19);
-	width: 100%;
-	color: white;
-	overflow: auto;
-}
-
 /*Styles the 'Specific partners card' Div*/
-#PartnersDiv .card {
+#PatnersDIV .card {
 	bottom: 30px;
 	width: fit-content;
 	color: black;
@@ -118,12 +142,12 @@
 }
 
 /*Styles the card that holds partners' logos*/
-#PartnersDiv .card img {
+#PatnersDIV .card img {
 	width: 150px;
 	height: 100px;
 }
 
-#PartnersDiv .card img:hover {
+#PatnersDIV .card img:hover {
 	opacity: 0.4;
 }
 
@@ -133,14 +157,16 @@
 	bottom: 40%;
 	right: 30px;
 	z-index: 99;
-	font-size: 60px;
-	color: grey;
+	font-size: 50px;
+	color: black;
 	cursor: pointer;
 	padding: 10px;
 	justify-content: center;
 	border-radius: 30px;
 }
-
+#ScrollUpBtn:hover {
+	color: grey;
+}
 #MapDiv {
 	width: 100vh;
 	height: 60vh;
